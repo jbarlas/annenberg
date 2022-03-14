@@ -1,26 +1,40 @@
 import json
+import csv
 import district_users as du
 import twitter_scraping as ts
 
-def save_to_file(dict):
+def save_to_json(dict):
     json_dict = json.dumps(dict)
     f = open("tweet_data.json","w")
     f.write(json_dict)
     f.close()
+    
+def save_to_csv(list):
+    headers = ["district", "created_at", "text"]
+    with open("tweet_data.csv", "w", encoding='UTF-8') as f:
+        write = csv.writer(f)
+        
+        write.writerow(headers)
+        write.writerows(list)
+    
+def save_to_txt(list):
+    with open("tweet_data.txt", "w", encoding='UTF-8') as f:
+        f.write(str(list))
 
 
 def main():
-    tweet_dict = {}
+    all_tweets = []
     district_users = du.get_user_list()
     print(f"Gathering tweet data from: {district_users}")
     for district in district_users:
         print("---------------------------------------------------------")
         tweet_list = ts.generate_tweet_list(district)
-        tweet_dict[district] = tweet_list
-    total_tweets = len(sum(tweet_dict.values(), []))
-    total_districts = len(tweet_dict.keys())
+        all_tweets += tweet_list
+    total_tweets = len(all_tweets)
+    total_districts = len(district_users)
     print(f"Found {total_tweets} total tweets from {total_districts} districts")
-    save_to_file(tweet_dict)
+    save_to_txt(all_tweets)
+    save_to_csv(all_tweets)
 
 
 if __name__ == '__main__':

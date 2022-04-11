@@ -10,10 +10,9 @@ def save_to_json(dict):
     f.close()
     
 def save_to_csv(list):
-    headers = ["district", "created_at", "text"]
+    headers = ["district", "term", "created_at", "text"]
     with open("tweet_data.csv", "w", encoding='UTF-8') as f:
-        write = csv.writer(f)
-        
+        write = csv.writer(f, lineterminator = '\n')
         write.writerow(headers)
         write.writerows(list)
     
@@ -25,6 +24,7 @@ def save_to_txt(list):
 def main():
     all_tweets = []
     district_users = du.get_user_list()
+    test = ['EPISD_DualLang', 'NewarkBilingual', 'LADatDCPS', 'ccsd_ell', 'sdp_multilingua']
     print(f"Gathering tweet data from: {district_users}")
     for district in district_users:
         print("---------------------------------------------------------")

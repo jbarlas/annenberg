@@ -28,17 +28,19 @@ def connect_to_endpoint(url):
         )
     return response.json().get('data')
 
-def get_list_tweets(district, json_resp):
+def get_list_tweets(district, term, json_resp):
     list_all_tweet = []
     print(json_resp)
     if json_resp is None:
-        return [district, "", ""]
+        return [[district, term, "", ""]]
     for tweet in json_resp:
         tweet_list = []
         tweet_list.append(district)
+        tweet_list.append(term)
         tweet_list.append(tweet.get("created_at"))
         tweet_list.append(tweet.get("text"))
-        list_all_tweet.append(tweet_list)
+        clean_tweet = list(map(lambda t: t.replace(",", "").replace('\n', ""), tweet_list))
+        list_all_tweet.append(clean_tweet)
     return list_all_tweet
 
 
@@ -48,7 +50,7 @@ def generate_tweet_list(district):
         print(f'Getting tweets from {district} with term: {term}...')
         url = create_url(term, district)
         json_resp = connect_to_endpoint(url)
-        tweets = get_list_tweets(district, json_resp)
+        tweets = get_list_tweets(district, term, json_resp)
         num_tweets = len(tweets)
         print(f"{num_tweets} tweets found")
         tweet_list += tweets
@@ -58,6 +60,7 @@ def generate_tweet_list(district):
 
 def main():
     print(generate_tweet_list("ebrpschools"))
+    print(generate_tweet_list("EPISD_DualLang"))
 
 if __name__ == '__main__':
     main()

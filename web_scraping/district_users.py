@@ -1,9 +1,10 @@
 import requests
-import json
 import auth
 
+GREAT_SCHOOLS_ID = 54752906
+
 def create_url():
-    base_url = "https://api.twitter.com/2/lists/54752906/members?"
+    base_url = "https://api.twitter.com/2/lists/" + GREAT_SCHOOLS_ID + "/members?"
     query = "user.fields=username"
     # maybe try to also get max values
     url = base_url + query

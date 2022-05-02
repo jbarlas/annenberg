@@ -1,6 +1,6 @@
-# Emerging Cetegories
+# Tweet Categories
 
-Preliminarily reading through the tweets yielded some natural categories which began to emerge. The following are the main categories identified:
+Preliminarily reading through the tweets yielded some natural categories which began to emerge. The following are the main classifications identified:
 - Tutor Recruitment
 - Advertising Tutoring
 - Informative Tweets
@@ -15,11 +15,11 @@ Preliminarily reading through the tweets yielded some natural categories which b
 - Most of the tweets have images alongside them
 - Districts will often copy and paste the same exact tweet multiple times (especially prevalent in the tutor recruitment tweets), changing only one or two characters (generally dates)
 - A large portion of the tweets are actually retweets from other accounts, not the district's own original tweet
-- There is varience in intended audience; some tweets directly address the student, while others are directed toward parents
+- There is variance in intended audience; some tweets directly address the student, while others are directed toward parents
 
 ## Recruitment
 
-Generally, tweets in this category advertise available tutoring positions within the district. Some of these positions are paid, while others are strictly looking for volunteers. It is difficult to discern the recuitment's target audience since qualifications are not posted within the tweet, but might be linked externally. 
+Generally, tweets in this category advertise available tutoring positions within the district. Some of these positions are paid, while others are strictly looking for volunteers. It is difficult to discern the recruitment's target audience since qualifications are not posted within the tweet, but might be linked externally. 
 
 > - "RT @CLEvolunteers: Reading! We are currently recruiting #volunteer to serve as #literacy tutors in @CLEMetroSchools &amp; @euclidschools \n@AARP\u2026"
 > - "AVID tutors needed\u2014 $10/hr. Read web article for qualifications.... http://t.co/SBe6vO3wjX"
@@ -27,7 +27,7 @@ Generally, tweets in this category advertise available tutoring positions within
 
 ## Advertising Tutoring
 
-Tweets in this category are aimed at informing the reader about opportunities to recieve tutoring. These tweets vary in target audience, with some directly addressing the student, while others ask if the reader's child is struggling. 
+Tweets in this category are aimed at informing the reader about opportunities to receive tutoring. These tweets vary in target audience, with some directly addressing the student, while others ask if the reader's child is struggling. 
 
 > - "RT @PierceCoLibrary: Confused by calculus? Struggling with science? Access professional tutors FREE with your Pierce County Library card...\u2026"
 > - "Free tutoring is available for LRSD students http://ow.ly/2zleE",
@@ -55,7 +55,7 @@ Many tweets tell of an individual's story of someone who was a tutor/performed t
 
 ### Scheduling
 
-The last categoy of information tweets are those which serve to inform the reader about tutoring opportunities. These tweets generally include information about when and where to recieve tutoring or information about cancelled tutoring sessions. These might come alone or as a part of a larger announcement with other logistical information as well. 
+The last category of information tweets are those which serve to inform the reader about tutoring opportunities. These tweets generally include information about when and where to receive tutoring or information about cancelled tutoring sessions. These might come alone or as a part of a larger announcement with other logistical information as well. 
 
 > - "RT @VarsityLakesMS: All after school activities have been cancelled. This includes the soccer game, NJHS dance, Step Team practice, and tut\u2026"
 > - "Today, PALS Peer Tutoring(12:10-1 PM), Cooking Club (3:30-4:30 PM), & Journalism Club (12:10-1 PM) meet at Plainfield.""What's happening at Algonquin? \n7:30 AM, 8th grade photo retakes\n3 PM, AST, Newspaper Club, Tutors & Computers, Girls V-Ball vs Lincoln" 

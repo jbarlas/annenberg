@@ -1,3 +1,6 @@
+# Data overview
+- `tweet_data.csv`: csv file containing data scraped from member distrits of Great City Schools. The data contains the following fields: `district,term,created_at,text` for all tweets containing the terms: `tutor, tutoring, tutors`.
+
 # Tweet Categories
 
 Preliminarily reading through the tweets yielded some natural categories which began to emerge. The following are the main classifications identified:

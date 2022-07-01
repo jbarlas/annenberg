@@ -16,6 +16,8 @@ AUTH_TOKEN = "<auth_token>"
    - Ensure that you have followed the authorization steps
 2. Run `main.py` 
    - This can be done in the parent directory by running the following command:
-   - `python web_scraping/twitter/main.py`
+```
+python web_scraping/twitter/main.py
+```
 3. This will open a REPL with commands to interact with the Twitter API
 4. Type `help` to view all commands or type `help [command]` to view command usage

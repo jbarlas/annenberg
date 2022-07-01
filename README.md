@@ -7,9 +7,6 @@
 3. Copy and paste the following code into the file:
 ```
 AUTH_TOKEN = "<auth_token>"
-
-def return_auth():
-    return AUTH_TOKEN
 ```
 4. Replace auth_token with the organization Twitter API authentication token (ensure it is declared as a string)
 ## How to run:

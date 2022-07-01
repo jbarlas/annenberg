@@ -1,5 +1,6 @@
 """Utiity funcions for Twitter web scraping"""
 
+from enum import Enum
 import requests
 import time
 import auth
@@ -11,11 +12,15 @@ functions which generate routes to hit
 based on query parameters
 """
 
-from typing import Optional
+from typing import List, Optional
+
+class TweetFields(Enum):
+    CREATED_AT = "created_at"
 
 
-# TODO: create function which generates api url to hit
-def url_all_tweets(search_term=None, account_name=None, fields=Optional[list]):
+
+# TODO: create function which generates api url to hit based on parameters
+def url_all_tweets(search_term=None, account_name=None, fields=Optional[List[TweetFields]]):
     base_url_all_tweets = 'https://api.twitter.com/2/tweets/search/all'
     query = []
     if search_term: 

@@ -44,9 +44,9 @@ def get_list_tweets(district, term, json_resp):
     return list_all_tweet
 
 
-def generate_tweet_list(district):
-    tweet_list = []
-    for term in search_terms:
+def generate_tweet_list(district, terms=search_terms):
+    tweet_list = [] 
+    for term in terms:
         print(f'Getting tweets from {district} with term: {term}...')
         url = create_url(term, district)
         json_resp = connect_to_endpoint(url)

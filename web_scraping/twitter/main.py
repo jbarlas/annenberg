@@ -50,8 +50,8 @@ class TwitterShell(cmd.Cmd):
         "query": None, 
         "max_results": 100,
     }
-    users = ['ccsd_ell', 'EPISD_DualLang']
-    terms = ['tutor']
+    users = []
+    terms = []
     tweets = []
     fields = {
         "params": query_params,
